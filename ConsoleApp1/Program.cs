@@ -357,7 +357,6 @@ namespace ConsoleApp1
             foreach (string name in names.Where(name => Regex.IsMatch(name, ".*t.*", RegexOptions.IgnoreCase))) Console.WriteLine($"Contains t : {name}");
 
 
-
             Console.ReadLine();
         }
 
@@ -386,7 +385,7 @@ namespace ConsoleApp1
     public static class ListExtensions
     {
         // GENERIC (type) extension method:
-        public static void AddMulti<T>(this List<T> list, params T[] items) // Note params keyword allows variable number of args
+        public static void AddMulti<T>(this List<T> list, params T[] items) // Note params keyword allows variable number of args.
         {
             foreach (var listItem in items)
             {

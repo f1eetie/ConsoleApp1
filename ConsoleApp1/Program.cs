@@ -308,7 +308,7 @@ namespace ConsoleApp1
             UseParamsObj();
 
             // An array argument can be passed, as long as the array
-            // type matches the parameter type of the method being called.
+            // type matches the parameter type of the method being called
             int[] myIntArray = { 5, 6, 7, 8, 9 };
             UseParamsInt(myIntArray);
 
